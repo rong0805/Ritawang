@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <link href="./assets/apple-icon-180x180.png" rel="apple-touch-icon">
+  <link href="./assets/favicon.ico" rel="icon">
+  <link href="./assets/mystyle.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js" crossorigin="anonymous"></script>
+
+  <title>Rita Wnag - Graphic</title>
+
+  <link href="./main.82cfd66e.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Add your content of header -->
+  <header class="">
+    <div class="navbar navbar-default visible-xs">
+      <button type="button" class="navbar-toggle collapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="./index.html" class="navbar-brand">Rita Wang</a>
+    </div>
+
+    <nav class="sidebar">
+      <div class="navbar-collapse" id="navbar-collapse">
+        <div class="site-header hidden-xs">
+          <a class="site-brand" href="./index.html" title="">
+            <div class="row">
+              <img class="sign" alt="" src="./assets/about/Sign.png">
+            </div>
+
+            Rita Wang
+          </a>
+          <p>2017 portfolio
+          </p>
+        </div>
+        <ul class="nav">
+          <li><a href="./index.html" title="">Home</a></li>
+          <li><a href="./about.html" title="">About</a></li>
+          <li><a href="./graphic.html" title="">Graphic</a></li>
+          <li><a href="./packaging.html" title="">packaging</a></li>
+          <li><a href="./posm.html" title="">POSM</a></li>
+          <li><a href="./illustration.html" title="">Illustration</a></li>
+          <li><a href="./contact.html" title="">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="" id="main-collapse">
+
+
+    <div class="row">
+      <div class="col-xs-12 section-container-spacer">
+        <div id="title-area" class="title-center">
+          <!-- <p class="main-title">
+            GRAPHIC DESIGN</p>
+          <p>Mercedes Benz / 國泰世華 / Ez Table / 蘇格登 / 現代汽車</p> -->
+        </div>
+      </div>
+
+      <div id="container"></div>
+
+
+    </div>
+
+
+    <div class="title-center">
+      <a class="send2me" href="graphic.html">Back</a>
+    </div>
+
+  </main>
+
+  <script type="text/x-jquery-tmpl" id="pic-temp">
+    <div class="col-xs-12 col-md-12 section-container-spacer">
+      <img class="img-responsive" alt="" src="./assets/graphic/${Path}">
+    </div>
+  </script>
+
+  <script type="text/x-jquery-tmpl" id="title-temp">
+    <p class="sub-title">
+      ${title}</p>
+    <p>${content[0]}</p>
+    <p>${content[1]}</p>
+    <p>${content[2]}</p>
+    <p>${content[3]}</p>
+  </script>
+
+  <script>
+    var wording = {
+      "benz1": {
+        'title': "MERCEDES-BENZ 2017 COLLECTION BROCHURE",
+        'content': ['台灣賓士每年都會推出專屬精品販售',
+          '今年以專屬焦點作為主軸設計型錄',
+          '擁有賓士精品的您讓周圍黯然失色，您就是所有目光的焦點']
+      },
+      "benz2": {
+        'title': "MERCEDES-BENZ 2017 COLLECTION SLIDE SHOW",
+        'content': [
+          '台灣賓士推出精品系列，除了發行型錄之外',
+          '更在各個服務中心擺放電視牆播出幻燈片展示精品',
+          '展現出賓士精品的流行高貴質感吸引消費者購買']
+      },
+      "cathay": {
+        'title': "國泰世華邀請卡設計",
+        'content': [
+          '2018國泰世華邀請卡設計',
+          '以國泰世華往下扎根，向上成長的企業精神作為邀請卡設計概念',
+          '用金銀銅三色分為三種不同的貴賓邀請用途',
+          '呈現出高級的質感'
+        ]
+      },
+      "eztable": {
+        'title': "Ez table Member Card Welcome Pack",
+        'content': ['Ez Table簡單桌新推出會員制服務，提出設計會員卡welcome pack需求',
+          '我們用「桌子」的概念設計會員卡，分為橘星、銀星、金星三個等級',
+          '收到卡片後折起可變為桌子的造型']
+      },
+      "singleton": {
+        'title': "蘇格登41年原酒報紙稿",
+        'content': ['蘇格登於2017年推出41年原酒，限量150瓶',
+          '為推廣珍稀的窖藏原酒系列',
+          '於各大報紙刊登其介紹']
+      },
+      "hyundai": {
+        'title': "現代汽車SPDM促銷傳單",
+        'content': ['現代汽車每月都會推出不同車款的促銷傳單設計需求',
+          '需要依該車款的特色與性格設計其宣傳單']
+      },
+    };
+
+    var dataUrl = {
+      "benz1": [
+        { "Path": "/benz1/Demo_封面.jpg" },
+        { "Path": "/benz1/Demo_內頁.jpg" },
+        { "Path": "/benz1/Demo_扉頁.jpg" },
+        { "Path": "/benz1/Demo_目錄.jpg" }
+      ],
+      "benz2": [
+        { "Path": "/benz2/01.jpg" },
+        { "Path": "/benz2/02.jpg" },
+        { "Path": "/benz2/03.jpg" },
+        { "Path": "/benz2/04.jpg" }
+      ],
+      'cathay': [
+        { "Path": "/cathay/01.jpg" },
+        { "Path": "/cathay/02.jpg" },
+        { "Path": "/cathay/03.jpg" },
+        { "Path": "/cathay/04.jpg" },
+        { "Path": "/cathay/05.jpg" },
+        { "Path": "/cathay/06.jpg" },
+        { "Path": "/cathay/07.jpg" },
+        { "Path": "/cathay/08.jpg" }
+      ],
+      'eztable': [
+        { "Path": "/eztable/01.jpg" },
+        { "Path": "/eztable/02.jpg" },
+        { "Path": "/eztable/03.jpg" },
+        { "Path": "/eztable/04.jpg" },
+        { "Path": "/eztable/05.jpg" },
+        { "Path": "/eztable/06.jpg" },
+        { "Path": "/eztable/07.jpg" },
+        { "Path": "/eztable/08.jpg" }
+      ],
+      'hyundai': [
+        { "Path": "/hyundai/01.jpg" },
+        { "Path": "/hyundai/02.jpg" }
+      ],
+      'singleton': [
+        { "Path": "/singleton/A.jpg" },
+        { "Path": "/singleton/B.jpg" },
+        { "Path": "/singleton/C.jpg" }
+      ]
+    }
+
+    document.addEventListener("DOMContentLoaded", function (event) {
+      navbarToggleSidebar();
+      navActivePage();
+    });
+
+    $(document).ready(function () {
+      var para = window.location.search.replace("?", "");
+
+      $("#pic-temp").tmpl(dataUrl[para]).appendTo("#container");
+      $("#title-temp").tmpl(wording[para]).appendTo("#title-area");
+    });
+  </script>
+
+  <script type="text/javascript" src="./main.85741bff.js"></script>
+</body>
+
+</html>

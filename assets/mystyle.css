@@ -1,0 +1,158 @@
+
+
+/* @media (min-width: 768px){
+
+} */
+
+@media (max-width: 992px){
+    #myPhoto {
+        height: 300px;
+        width: 100%;
+        background-image: url('about/Photo.jpg');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover
+    }
+}
+
+@media(min-width:993px){
+    #myPhoto {
+        height: 100vh;
+        width: 100%;
+        background-image: url('about/Photo.jpg');
+        background-repeat: no-repeat;
+        background-size: contain
+    }
+
+    main {
+        margin-left: 300px;
+    }
+
+    .sidebar{
+        width: 300px;
+    }
+}
+
+.reveal-content input{
+    border: none;
+    background-color: rgb(244, 244, 244);
+    color: black;
+}
+
+
+.reveal-content textarea{
+    border: none;
+    background-color: rgb(244, 244, 244);
+    color: black;
+}
+
+
+.reveal-content input:hover{
+    background-color: white;
+}
+
+
+.reveal-content textarea:hover{
+    background-color: white;
+}
+
+#navbar-collapse{
+    text-align: center;
+}
+
+.title-center{
+    text-align: center;
+    margin: 20px 0;
+    display: inline-block;
+    width: 100%;
+    
+}
+
+.divider {
+    border: 0;
+    border-top: 10px solid rgb(149, 149, 149);
+    width: 25%;
+    display: block;
+    margin: 24px 0;
+  }
+
+
+.divider-thin {
+    border: 0;
+    border-top: 2px solid black;
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    margin: 5px 0;
+}
+
+  h1 {
+    color: rgb(149, 149, 149)!important;
+  }
+
+  .main-title{
+    color: rgb(149, 149, 149);
+    letter-spacing: 2px;
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 3rem;
+  }
+
+  .sub-title{
+    color: rgb(149, 149, 149);
+    letter-spacing: 2px;
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 2rem;
+  }
+
+  .graphic-title{
+      font-size: 1.5rem;
+      color: rgb(149, 149, 149);
+      letter-spacing: 2px;
+      font-family: Montserrat;
+      font-weight: 300;
+      margin-top: 10px;
+  }
+
+  .sign{
+    height: 70px;
+    width:auto;
+    display: block;
+    margin: 0 auto 0 auto;
+  }
+
+  .send2me{
+      border: 2px solid black;
+      color: black;
+      font-family: Montserrat;
+      font-size: 10px;
+      text-transform: uppercase;
+      color: rgb(0, 0, 0);
+      padding-bottom: 15px;
+      letter-spacing: 0.15em;
+      padding: 15px 30px;
+      background-color: rgba(0, 0, 0, 0);
+  }
+
+  .send2me:hover{
+      background-color: black;
+      color: white;
+}
+
+.my-collection{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.my-collection img{
+    width: 100%;
+    min-height: 300px;
+}
+
+.my-collection img:hover{
+    opacity: 0.8;
+}
