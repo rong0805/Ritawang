@@ -84,14 +84,14 @@
 
 
     <div class="title-center">
-      <a class="send2me" href="graphic.html">Back</a>
+      <a class="send2me" onclick="window.history.go(-1);">Back</a>
     </div>
 
   </main>
 
   <script type="text/x-jquery-tmpl" id="pic-temp">
     <div class="col-xs-12 col-md-12 section-container-spacer">
-      <img class="img-responsive" alt="" src="./assets/graphic/${Path}">
+      <img class="img-responsive" alt="" src="./assets/${Path}">
     </div>
   </script>
 
@@ -145,49 +145,101 @@
         'content': ['現代汽車每月都會推出不同車款的促銷傳單設計需求',
           '需要依該車款的特色與性格設計其宣傳單']
       },
+      "trueleaf":{
+        'title': "原萃日式輕萃綠茶包裝",
+        'content': ['原萃預計於2018年推出全新商品',
+          '『日式輕萃綠茶』',
+          '有別於以往濃厚的茶韻，這次主打清爽的口感',
+          '包裝配色上以清爽天然為主']
+      },
+      "soken":{
+        'title': "爽健美茶夏巡",
+        'content': ['爽健美茶在2017年夏天推出特別限定商品『夏巡』',
+          '以白茶作為基底，希望設計出特別包裝吸引消費者購買',
+          '以清爽天然的風格並搭配花草茶作為設計的調性']
+      },
+      "popsicles":{
+        'title': "原賞果實冰棒包裝",
+        'content': ['統一推出新的果實冰棒產品',
+          '以新鮮真實果實作為基底製作冰棒',
+          '包裝設計上強調真實食材原味呈現']
+      },
+      "icewalker":{
+        'title': "ICEWALKER冰塊包裝",
+        'content': ['統一推出新的小包裝冰塊',
+          '搭配塑膠杯可自由加入飲料',
+          '包裝設計以咖啡與果汁兩種作為分類',
+        '讓消費者依自己的喜好去選擇購買']
+      }
     };
 
     var dataUrl = {
       "benz1": [
-        { "Path": "/benz1/Demo_封面.jpg" },
-        { "Path": "/benz1/Demo_目錄.jpg" },
-        { "Path": "/benz1/Demo_扉頁.jpg" },
-        { "Path": "/benz1/Demo_內頁.jpg" },
+        { "Path": "graphic/benz1/Demo_封面.jpg" },
+        { "Path": "graphic/benz1/Demo_目錄.jpg" },
+        { "Path": "graphic/benz1/Demo_扉頁.jpg" },
+        { "Path": "graphic/benz1/Demo_內頁.jpg" },
       ],
       "benz2": [
-        { "Path": "/benz2/01.jpg" },
-        { "Path": "/benz2/02.jpg" },
-        { "Path": "/benz2/03.jpg" },
-        { "Path": "/benz2/04.jpg" }
+        { "Path": "graphic/benz2/01.jpg" },
+        { "Path": "graphic/benz2/02.jpg" },
+        { "Path": "graphic/benz2/03.jpg" },
+        { "Path": "graphic/benz2/04.jpg" }
       ],
       'cathay': [
-        { "Path": "/cathay/01.jpg" },
-        { "Path": "/cathay/02.jpg" },
-        { "Path": "/cathay/03.jpg" },
-        { "Path": "/cathay/04.jpg" },
-        { "Path": "/cathay/05.jpg" },
-        { "Path": "/cathay/06.jpg" },
-        { "Path": "/cathay/07.jpg" },
-        { "Path": "/cathay/08.jpg" }
+        { "Path": "graphic/cathay/01.jpg" },
+        { "Path": "graphic/cathay/02.jpg" },
+        { "Path": "graphic/cathay/03.jpg" },
+        { "Path": "graphic/cathay/04.jpg" },
+        { "Path": "graphic/cathay/05.jpg" },
+        { "Path": "graphic/cathay/06.jpg" },
+        { "Path": "graphic/cathay/07.jpg" },
+        { "Path": "graphic/cathay/08.jpg" }
       ],
       'eztable': [
-        { "Path": "/eztable/01.jpg" },
-        { "Path": "/eztable/02.jpg" },
-        { "Path": "/eztable/03.jpg" },
-        { "Path": "/eztable/04.jpg" },
-        { "Path": "/eztable/05.jpg" },
-        { "Path": "/eztable/06.jpg" },
-        { "Path": "/eztable/07.jpg" },
-        { "Path": "/eztable/08.jpg" }
+        { "Path": "graphic/eztable/01.jpg" },
+        { "Path": "graphic/eztable/02.jpg" },
+        { "Path": "graphic/eztable/03.jpg" },
+        { "Path": "graphic/eztable/04.jpg" },
+        { "Path": "graphic/eztable/05.jpg" },
+        { "Path": "v/eztable/06.jpg" },
+        { "Path": "graphic/eztable/07.jpg" },
+        { "Path": "graphic/eztable/08.jpg" }
       ],
       'hyundai': [
-        { "Path": "/hyundai/01.jpg" },
-        { "Path": "/hyundai/02.jpg" }
+        { "Path": "graphic/hyundai/01.jpg" },
+        { "Path": "graphic/hyundai/02.jpg" }
       ],
       'singleton': [
-        { "Path": "/singleton/A.jpg" },
-        { "Path": "/singleton/B.jpg" },
-        { "Path": "/singleton/C.jpg" }
+        { "Path": "graphic/singleton/A.jpg" },
+        { "Path": "graphic/singleton/B.jpg" },
+        { "Path": "graphic/singleton/C.jpg" }
+      ],
+      'trueleaf':[
+        { "Path": "packaging/01/01.jpg" },
+        { "Path": "packaging/01/02.jpg" },
+        { "Path": "packaging/01/03.jpg" },
+        { "Path": "packaging/01/04.jpg" },
+        { "Path": "packaging/01/05.jpg" },
+      ],
+      'soken':[
+        { "Path": "packaging/02/01.jpg" },
+        { "Path": "packaging/02/02.jpg" },
+        { "Path": "packaging/02/03.jpg" },
+        { "Path": "packaging/02/04.jpg" },
+        { "Path": "packaging/02/05.jpg" },
+      ],
+      'popsicles':[
+      { "Path": "packaging/03/01.jpg" },
+      { "Path": "packaging/03/02.jpg" },
+      { "Path": "packaging/03/03.jpg" },
+      { "Path": "packaging/03/04.jpg" },
+      ],
+      'icewalker':[
+      { "Path": "packaging/04/01.jpg" },
+      { "Path": "packaging/04/02.jpg" },
+      { "Path": "packaging/04/03.jpg" },
+      { "Path": "packaging/04/04.jpg" },        
       ]
     }
 
