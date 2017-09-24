@@ -90,6 +90,20 @@
     color: rgb(149, 149, 149)!important;
   }
 
+
+  h3 {
+    font-family: Montserrat!important;
+    font-weight: 300!important;
+}
+
+.home-title{
+    color: rgb(149, 149, 149);
+    letter-spacing: 2px;
+    font-family: Montserrat;
+    font-size: 1.8rem;
+}
+
+
   .main-title{
     color: rgb(149, 149, 149);
     letter-spacing: 2px;
@@ -108,9 +122,9 @@
 
   .graphic-title{
       font-size: 1.5rem;
-      color: rgb(149, 149, 149);
+    font-family: Montserrat;
+    color: rgb(149, 149, 149);
       letter-spacing: 2px;
-      font-family: Montserrat;
       font-weight: 300;
       margin-top: 10px;
   }
@@ -186,4 +200,25 @@
 
 .container{
     margin: 0 7%;
+}
+
+.site-brand{
+    font-family: Montserrat!important;
+    font-weight: 400!important;    
+}
+
+nav{
+    padding: 90px 30px!important;
+}
+
+nav li>a{
+    color: rgb(149, 149, 149)!important;
+    font-family: Montserrat!important;
+    font-weight: 400!important;   
+}
+
+nav li{
+    margin: 1.5rem 0;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
 }
